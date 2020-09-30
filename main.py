@@ -33,5 +33,7 @@ while start_no < chances:
         else:
             drawn += 1
             print('WRONG!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
+            if drawn == 12:
+                hangman_pic(drawn)
             guess += user_input[0]
         start_no += 1
